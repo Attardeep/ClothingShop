@@ -1,0 +1,18 @@
+Index: app/src/main/res/layout/activity_login_page.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/activity_login_page.xml	(revision 56987a655235334dc7f4b3b0e969c2d7aabcf7e3)
++++ app/src/main/res/layout/activity_login_page.xml	(date 1594263002712)
+@@ -80,8 +80,8 @@
+ 
+                 <Button
+                     android:id="@+id/button"
+-                    android:layout_width="252dp"
+-                    android:layout_height="82dp"
++                    android:layout_width="233dp"
++                    android:layout_height="101dp"
+                     android:layout_marginTop="84dp"
+                     android:text="Register Here"
+                     app:layout_constraintTop_toBottomOf="@+id/text1"
