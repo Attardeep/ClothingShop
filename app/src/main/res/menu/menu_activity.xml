@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_shoppingcart"
+        android:icon="@drawable/shopping_cart_24"
+        android:title="action_cart"
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/contactpage"
         android:title="Contact us"/>
