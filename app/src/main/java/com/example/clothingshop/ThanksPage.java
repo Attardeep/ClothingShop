@@ -4,12 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ShippingInformation extends AppCompatActivity {
+public class ThanksPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shipping_information);
-
+        setContentView(R.layout.activity_thanks_page);
     }
 }
