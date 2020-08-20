@@ -33,9 +33,9 @@ public class Main2Activity extends AppCompatActivity {
         List<ModelClass> modelClassList = new ArrayList<>();
         modelClassList.add(new ModelClass(R.drawable.half,"Pink T-Shirt","Price : 310$"));
         modelClassList.add(new ModelClass(R.drawable.shirt,"Black Watch","Price : 170$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"White Sneaker shoes","Price : 490$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Armani Perfume","Price : 450$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Woodland Belt","Price : 450$"));
+        modelClassList.add(new ModelClass(R.drawable.denimshrit,"White Sneaker shoes","Price : 490$"));
+        modelClassList.add(new ModelClass(R.drawable.hoodedjacket,"Armani Perfume","Price : 450$"));
+        modelClassList.add(new ModelClass(R.drawable.hoodedjean,"Woodland Belt","Price : 450$"));
         modelClassList.add(new ModelClass(R.drawable.shirt,"Fossil Watch","Price : 300$"));
         modelClassList.add(new ModelClass(R.drawable.shirt,"Gucci Perfume ","Price : 500$"));
         modelClassList.add(new ModelClass(R.drawable.shirt,"Jordan Sneakers","Price : 130$"));
