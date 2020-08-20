@@ -52,7 +52,7 @@
                         android:id="@+id/textView2"
                         android:layout_width="match_parent"
                         android:layout_height="99dp"
-                        android:text="this_new_mudmaster_model_was_created_especially_for_this_whose_work_takes_it_into_areas_where_piles_of_rubble_dirt_and_debris_are_present"
+                        android:text="This item is an online exclusive and is only available for a very limited time. Grab it when you still can."
                         android:textColor="#abcdef" />
 
                 </LinearLayout>

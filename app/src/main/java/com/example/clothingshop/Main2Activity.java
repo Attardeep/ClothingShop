@@ -31,16 +31,16 @@ public class Main2Activity extends AppCompatActivity {
         recyclerView.setLayoutManager(LayoutManager);
 
         List<ModelClass> modelClassList = new ArrayList<>();
-        modelClassList.add(new ModelClass(R.drawable.half,"Pink T-Shirt","Price : 310$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Black Watch","Price : 170$"));
-        modelClassList.add(new ModelClass(R.drawable.denimshrit,"White Sneaker shoes","Price : 490$"));
-        modelClassList.add(new ModelClass(R.drawable.hoodedjacket,"Armani Perfume","Price : 450$"));
-        modelClassList.add(new ModelClass(R.drawable.hoodedjean,"Woodland Belt","Price : 450$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Fossil Watch","Price : 300$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Gucci Perfume ","Price : 500$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Jordan Sneakers","Price : 130$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Ironman Mouse ","Price : 160$"));
-        modelClassList.add(new ModelClass(R.drawable.shirt,"Armani ","Price : 450$"));
+        modelClassList.add(new ModelClass(R.drawable.half,"Half hands Shirt","Price : 40$"));
+        modelClassList.add(new ModelClass(R.drawable.shirt,"Shirt","Price : 60$"));
+        modelClassList.add(new ModelClass(R.drawable.denimshrit,"Denim Shirt","Price : 80$"));
+        modelClassList.add(new ModelClass(R.drawable.hoodedjacket,"Hooded Jacket","Price : 120$"));
+        modelClassList.add(new ModelClass(R.drawable.hoodedjean,"Hooded Jeans Jacket","Price : 90$"));
+        modelClassList.add(new ModelClass(R.drawable.shirt,"Shirt","Price : 300$"));
+        modelClassList.add(new ModelClass(R.drawable.shirt,"Shirt","Price : 500$"));
+        modelClassList.add(new ModelClass(R.drawable.shirt,"Shirt","Price : 130$"));
+        modelClassList.add(new ModelClass(R.drawable.shirt,"Shirt","Price : 160$"));
+        modelClassList.add(new ModelClass(R.drawable.shirt,"Shirt","Price : 450$"));
 
         Adapter adapter = new Adapter(modelClassList);
         recyclerView.setAdapter(adapter);
