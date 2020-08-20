@@ -20,7 +20,7 @@ public class LoginPage extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startMenuActivity();
+                startMain2Activity();
             }
         });
         button.setOnClickListener(new View.OnClickListener() {
@@ -30,8 +30,8 @@ public class LoginPage extends AppCompatActivity {
             }
         });
     }
-    public void startMenuActivity(){
-        Intent intent= new Intent(this,ItemPage.class);
+    public void startMain2Activity(){
+        Intent intent= new Intent(this,Main2Activity.class);
         startActivity(intent);
 
     }
