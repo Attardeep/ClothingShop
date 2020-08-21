@@ -31,7 +31,7 @@ public class SignUpPage extends AppCompatActivity {
         });
     }
         public void startMenuActivity () {
-            Intent intent = new Intent(this, ItemPage.class);
+            Intent intent = new Intent(this, Main2Activity.class);
             startActivity(intent);
 
         }
