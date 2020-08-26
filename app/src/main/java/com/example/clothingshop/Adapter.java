@@ -18,7 +18,7 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
 
-    int count_1 = 0;
+    int num = 0;
     private Context mCtx;
     public List<ModelClass> modelClassList;
 
@@ -37,12 +37,29 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Viewholder holder, int position) {
+    public void onBindViewHolder(@NonNull final Viewholder holder, int position) {
         int resource = modelClassList.get(position).getImageResource();
         String title = modelClassList.get(position).getTitle();
         String shortDesc = modelClassList.get(position).getShortDesc();
         String body = modelClassList.get(position).getBody();
         holder.setData(resource, title, body, shortDesc);
+
+        holder.buttonIncrease.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                num++;
+                holder.textViewNumber.setText(String.valueOf(num));
+                notifyDataSetChanged();
+            }
+        });
+        holder.buttonDecrease.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (num>0)
+                    num--;
+                holder.textViewNumber.setText(String.valueOf(num));
+            }
+        });
     }
 
     @Override
@@ -58,10 +75,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
     public class Viewholder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
         ImageView imageView;
-        TextView title;
+        TextView title,textViewNumber;
         TextView body;
         TextView shortDesc;
         Button shopping;
+        Button buttonDecrease,buttonIncrease;
 
 
         public Viewholder(@NonNull View itemView) {
@@ -72,7 +90,12 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
             body = itemView.findViewById((R.id.textView3));
             shortDesc = itemView.findViewById(R.id.textView2);
             shopping = (Button) itemView.findViewById(R.id.buy_button);
+            textViewNumber=itemView.findViewById(R.id.textNumber);
+            buttonDecrease=itemView.findViewById(R.id.buttonDecrease);
+            buttonIncrease=itemView.findViewById(R.id.buttonIncrease);
 
+            buttonDecrease.setOnClickListener(this);
+            buttonIncrease.setOnClickListener(this);
             shopping.setOnClickListener(this);
 
         }

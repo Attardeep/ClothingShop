@@ -64,6 +64,44 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textStyle="bold" />
 
+            <Button
+                android:id="@+id/buttonDecrease"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/imageView"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:background="@drawable/remove"/>
+
+            <TextView
+                android:id="@+id/textNumber"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView3"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/buttonDecrease"
+                android:text="0"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonIncrease"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/textView3"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/textNumber"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:textStyle="bold"
+                android:background="@drawable/add"/>
+
+
 
 
 

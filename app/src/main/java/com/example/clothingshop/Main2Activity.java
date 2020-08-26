@@ -19,11 +19,24 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The second Activity for application
+ * @author ziwenma
+ * @version 1.0
+ * This Screen displays the item with recyclerview
+ */
 public class Main2Activity extends AppCompatActivity {
 
-    List<ModelClass> modelClassList;
+    /**
+     * RecyclerView to display items
+     */
 
+    List<ModelClass> modelClassList;
     private RecyclerView recyclerView;
+
+    /**
+     * FloatingActionButton to make a button to click to next activity
+     */
     private FloatingActionButton Checkout;
     Adapter adapter;
 
@@ -59,7 +72,9 @@ public class Main2Activity extends AppCompatActivity {
             }
         });
 
-
+/**
+ * data to populate the RecyclerView with
+ */
         modelClassList = new ArrayList<>();
         modelClassList.add(new ModelClass(R.drawable.half,"Half hands Shirt","Price : 40$","this is half hands shirt for the man and it are large size only"));
         modelClassList.add(new ModelClass(R.drawable.shirt,"Shirt","Price : 60$","this is shirt for the man and it good for suite"));
@@ -99,19 +114,33 @@ public class Main2Activity extends AppCompatActivity {
         adapter.filterList(filteredList);
     }
 
-
+    /**
+     * To click to the shoppingCart activity
+     *
+     */
     public void onCreateDialog() {
         Intent intent5 = new Intent(this, ShoppingCart.class);
         startActivity(intent5);
     }
 
 
+    /**
+     * inflate the menu
+     * @param menu
+     * @return
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_activity, menu);
         return true;
 
     }
+
+    /**
+     * this method gets called when user select an option from the menu
+     * @param item a MenuItem Selected
+     * @return the selected Item
+     */
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

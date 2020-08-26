@@ -10,4 +10,8 @@
         android:id="@+id/contactpage"
         android:title="Contact us"/>
 
+    <item
+        android:id="@+id/profile"
+        android:title="Profile"/>
+
 </menu>
