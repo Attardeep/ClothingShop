@@ -155,6 +155,12 @@ public class Main2Activity extends AppCompatActivity {
             startActivity(myintent);
         }
 
+        if (id == R.id.profile) {
+            Intent myintent = new Intent(Main2Activity.this, ProfilePage.class);
+            startActivity(myintent);
+        }
+
+
         return super.onOptionsItemSelected(item);
     }
 

@@ -35,12 +35,23 @@
         android:hint="Address with zipcode"
         android:layout_gravity="center"/>
 
-    <EditText
-        android:id="@+id/city"
+    <TextView
+        android:id="@+id/country"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="City"
-        android:layout_gravity="center"/>
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:text="choose a country"
+        android:gravity="center_vertical"/>
+
+    <Spinner
+        android:id="@+id/countryChoose"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_vertical"
+         />
 
     <EditText
         android:id="@+id/email"
