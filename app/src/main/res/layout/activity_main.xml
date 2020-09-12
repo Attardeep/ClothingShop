@@ -51,19 +51,5 @@ tools:context=".MainActivity">
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loginButton" />
 
-    <Button
-        android:id="@+id/btnShipping"
-        android:layout_width="331dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="36dp"
-        android:background="#FF0000"
-        android:text="@string/go_to_shopping_page_first"
-        android:textColor=" #FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
