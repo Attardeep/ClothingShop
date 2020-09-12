@@ -36,7 +36,7 @@
         android:layout_gravity="center"/>
 
     <TextView
-        android:id="@+id/country"
+        android:id="@+id/country1"
         android:layout_width="match_parent"
         android:layout_height="25dp"
         android:layout_gravity="center"
