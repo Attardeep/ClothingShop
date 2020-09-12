@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -51,6 +52,7 @@ public class ShippingInformation extends AppCompatActivity implements AdapterVie
 
         sharedPreferences = getSharedPreferences("MyPREFERENCES", Context.MODE_PRIVATE);
         final String sId = sharedPreferences.getString("id", "");
+        Log.e("Id", sId);
         if (!TextUtils.isEmpty(sId)) {
             DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("shippings");
 
